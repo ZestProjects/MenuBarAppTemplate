@@ -3,8 +3,10 @@ name: Xcode - Build and Analyze
 on:
   push:
     branches: ["main"]
+    paths: ['MenuBarAppTemplate.xcodeproj/**', 'MenuBarAppTemplate/**']
   pull_request:
     branches: ["main"]
+    paths: ['MenuBarAppTemplate.xcodeproj/**', 'MenuBarAppTemplate/**']
 
 jobs:
   debug:
