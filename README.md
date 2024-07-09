@@ -4,7 +4,7 @@ Want to build a Menu Bar tool on macOS but don't know where to start? Give this 
 
 ## Where to start?
 
-First, [set your Manu Bar icon](https://github.com/ZestProjects/MenuBarAppTemplate/blob/main/MenuBarAppTemplate/AppDelegate.swift#L21). You can use any [NSImage](https://developer.apple.com/documentation/appkit/nsimage) for the icon, by default this template selects a symbol from [SF Symbols](https://developer.apple.com/sf-symbols).
+First, [set your Menu Bar icon](https://github.com/ZestProjects/MenuBarAppTemplate/blob/main/MenuBarAppTemplate/AppDelegate.swift#L21). You can use any [NSImage](https://developer.apple.com/documentation/appkit/nsimage) for the icon, by default this template selects a symbol from [SF Symbols](https://developer.apple.com/sf-symbols).
 
 Then, [build your menu](https://github.com/ZestProjects/MenuBarAppTemplate/blob/main/MenuBarAppTemplate/MenuDelegate.swift#L13). By default, an [About dialog](https://github.com/ZestProjects/MenuBarAppTemplate/blob/main/MenuBarAppTemplate/MenuDelegate.swift#L16) (which additionally presents the contents of [Credits.html](https://github.com/ZestProjects/MenuBarAppTemplate/blob/main/MenuBarAppTemplate/Credits.html)) and a [Quit button](https://github.com/ZestProjects/MenuBarAppTemplate/blob/main/MenuBarAppTemplate/MenuDelegate.swift#L23) are added. Make sure to keep `menu.removeAllItems()` at the top of the `menuNeedsUpdate()` function otherwise you'll be appending menu items each time the menu is opened.
 
